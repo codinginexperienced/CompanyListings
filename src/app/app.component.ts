@@ -28,7 +28,7 @@ export class AppComponent {
     this._demoService.getCompanies(company).subscribe(
       data => { this.companies = data },
       err => console.error(err),
-      () => console.log('done loading companies')
+      () => console.log('we be done did done loading companies')
     );
   }
 
