@@ -1,0 +1,21 @@
+<app-search></app-search>
+<h1>Azure Function Interaction Demo App</h1>
+<h2>Companies</h2>
+
+<p>Search for a company: 
+  <input type="text" name="companySearch" [(ngModel)]="companySearch" >
+  <button (click)="getCompanies(companySearch)">Search</button>
+</p>
+
+<p>Create a new company: 
+    <input type="text" name="company_Name" [(ngModel)]="company_Name">
+    <button (click)="createCompany(company_Name)">Save</button>
+</p>
+
+<ul>
+    <li *ngFor="let company of companies"><input type="text" name="companyName" [(ngModel)]="company.CompanyName">
+
+    <button (click)="updateCompany(company)">Save</button>
+    <button (click)="deleteCompany(company)">Delete</button>
+  </li>
+</ul> 
