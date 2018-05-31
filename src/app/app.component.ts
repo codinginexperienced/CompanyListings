@@ -18,6 +18,7 @@ export class AppComponent {
   constructor(private _demoService: DemoServiceService) {}
 
   ngOnInit(){
+    console.log("hit on ngoninit");
     this.getCompanies();
   } 
 
