@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import {MatListModule} from '@angular/material/list';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchComponent } from './search/search.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    MatListModule
+    MatListModule,
+    AppRoutingModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
